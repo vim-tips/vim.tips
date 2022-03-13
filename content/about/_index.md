@@ -33,3 +33,5 @@ Check your changes in http://127.0.0.1:1111
 ```
 
 Then, you can share your changes by creating a pull request on the branch `preview`
+
+After the PR is approved your changes will be available here: https://preview.vim.tips/
