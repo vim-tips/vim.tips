@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vim.tips/sitemap.xml
