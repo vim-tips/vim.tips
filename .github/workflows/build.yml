@@ -7,6 +7,7 @@ env:
 
 jobs:
   build:
+    name: build zola
     runs-on: ubuntu-latest
     steps:
       - name: checkout
