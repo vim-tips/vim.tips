@@ -1,9 +1,13 @@
 name: build
 
-on: [push, pull_request]
-
-env:
-    CARGO_TERM_COLOR: always
+on:
+  push:
+    branches:
+      - preview
+  pull_request:
+    branches:
+      - preview
+  workflow_dispatch:
 
 jobs:
   build:
@@ -12,6 +16,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+        with:
+          ref: preview
 
       - name: build
         uses: shalzz/zola-deploy-action@master
